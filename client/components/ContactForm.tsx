@@ -6,6 +6,8 @@ export default function ContactForm() {
         <input type="text" />
         <label>Message</label>
         <input type="text" />
+        <label>Email</label>
+        <input type="email" />
         <button>Send</button>
       </form>
     </>
