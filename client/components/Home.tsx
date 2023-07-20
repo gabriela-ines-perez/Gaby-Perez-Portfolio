@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      {/* <Projects /> */}
+      <Projects />
       <AboutGaby />
       <Footer />
     </>

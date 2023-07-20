@@ -1,10 +1,17 @@
 import CV from './CV'
 import ContactForm from './ContactForm'
+import { useState } from 'react'
 
 export default function AboutGaby() {
+  const [viewForm, setViewForm] = useState(false)
+
+  const handleClick = () => {
+    setViewForm(!viewForm)
+  }
+
   return (
     <>
-      <section className="about-me">
+      <section className="about-me" id="about">
         <h3>I am gaby</h3>
         <p>
           I am a full-stack software developer with a background in tech
@@ -14,7 +21,10 @@ export default function AboutGaby() {
           founding two tech startups.
         </p>
         <CV />
-        <ContactForm />
+        <button onClick={handleClick}>
+          {viewForm ? 'Hide' : 'Flick me a message'}
+        </button>
+        {viewForm && <ContactForm />}
       </section>
     </>
   )
