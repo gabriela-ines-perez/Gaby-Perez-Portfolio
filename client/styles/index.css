@@ -85,9 +85,21 @@ footer{
   padding: 20px;
   width: 300px;
   margin: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .card-cover-image{
 width: 100%
 }
 
+.purple-button{
+  font-family:'Space Mono', monospace;
+  background-color: #744087;
+  color: white;
+  border-radius: 20px;
+  border-width: 0px;
+  padding: 5px 7px 5px 7px;
+  margin-top: 10px;
+  cursor: pointer;
+}

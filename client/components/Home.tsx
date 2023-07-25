@@ -1,15 +1,12 @@
-import Header from './Header'
-import Footer from './Footer'
-import AboutGaby from './AboutGaby'
+// import { Outlet } from 'react-router-dom'
 import Projects from './Projects'
 
 export default function Home() {
   return (
     <>
-      <Header />
-      <Projects />
-      <AboutGaby />
-      <Footer />
+      <section className="projects-container" id="projects">
+        <Projects />
+      </section>
     </>
   )
 }

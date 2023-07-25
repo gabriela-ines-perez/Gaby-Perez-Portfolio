@@ -21,7 +21,7 @@ export default function AboutGaby() {
           founding two tech startups.
         </p>
         <CV />
-        <button onClick={handleClick}>
+        <button className='purple-button' onClick={handleClick}>
           {viewForm ? 'Hide' : 'Flick me a message'}
         </button>
         {viewForm && <ContactForm />}
