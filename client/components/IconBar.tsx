@@ -16,7 +16,7 @@ export default function IconBar() {
       id: 2,
       name: 'Email',
       image: '/email.png',
-      url: 'gaby@perez.co.nz',
+      url: 'mailto:gaby@perez.co.nz',
     },
   ]
 
